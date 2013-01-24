@@ -20,7 +20,7 @@ d3.json("cook2.json", function(error, cook){
     densities.push(subunits.geometries[geometry].properties.density);
   }
   var path = d3.geo.path().projection(projection);
-  var interpolate = d3.scale.quantile().domain([d3.min(densities), d3.max(densities)]).range([0.1,1.1]);
+  var interpolate = d3.scale.quantile().domain(densities).range([0.1,1.1]);
 
   svg.selectAll('.subunit')
     .data(subunits.geometries)
