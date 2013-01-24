@@ -1,5 +1,5 @@
 var width = 960;
-var height = 1160;
+var height = 900;
 
 var svg = d3.select("body")
   .append("svg")
@@ -9,7 +9,7 @@ var svg = d3.select("body")
 // Projection of choice
 var projection = d3.geo.albers()
   .center([-87.08345, 46.7508])
-  .rotate([21, 21.3])
+  .rotate([21, 21])
   .scale(57000)
   .translate([width/2, height/2]);
 
