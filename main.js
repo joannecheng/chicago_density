@@ -8,9 +8,9 @@ var svg = d3.select("body")
 
 // Projection of choice
 var projection = d3.geo.albers()
-  .center([-87.65345, 41.8508])
-  .rotate([0, 0])
-  .scale(75000)
+  .center([-87.08345, 46.7508])
+  .rotate([21, 21.3])
+  .scale(57000)
   .translate([width/2, height/2]);
 
 d3.json("cook2.json", function(error, cook){
