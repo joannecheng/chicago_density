@@ -28,5 +28,4 @@ d3.json("cook2.json", function(error, cook){
     .attr("class", function(d) { return "subunit " + d.id })
     .attr("d", path)
     .style("opacity", function(d) { return interpolate(d.properties.density); });
-
 });
