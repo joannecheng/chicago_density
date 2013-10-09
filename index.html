@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-  .label {
+  .content {
     font-family: Helvetica, Sans-serif;
     margin-left: 20%;
     padding-bottom: 100px;
-  }
-  #map {
-    width: 960;
-    height: 900;
   }
   .subunit { fill: steelblue; }
   .subunit-boundary {
@@ -22,11 +18,10 @@
 <body>
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v0.min.js"></script>
-  <script src="main.js"></script>
 
-  <h1 class="label">Cook County Population Density</h1>
+  <h1 class="content">Cook County Population Density</h1>
   <div id="map"></div>
-  <div class="label">
+  <div class="content">
     Playing with census tracts/population density.
     <br />
     <br /> Sources:
@@ -35,6 +30,7 @@
       <li><a href="http://census.ire.org/data/bulkdata.html?state=11&sumlev=140">Bulk Census Data</a></li>
       <li><a href="http://bost.ocks.org/mike/map/">Let's Make a Map</a> - Mike Bostock</li>
     </ul>
+    <script src="main.js"></script>
   </div>
 
 </body>
